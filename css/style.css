@@ -70,8 +70,9 @@ br {
 	width: 100%;
 }
 
-.flex-fit {
-	flex: 1;
+.grid-columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 /* Buttons */
@@ -232,6 +233,10 @@ header img {
 		flex-direction: column;
 	}
 
+	.grid-columns {
+		grid-template-columns: 1fr;
+	}
+
 	#survey-form {
 		padding: 0.5rem 0.5rem;
 	}
@@ -255,10 +260,6 @@ header img {
 
 	#p-info .col:first-of-type {
 		margin-right: 01rem;
-	}
-
-	.flex-fit {
-		flex: auto;
 	}
 
 	header img {
