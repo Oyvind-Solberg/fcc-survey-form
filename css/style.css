@@ -53,11 +53,6 @@ h2 {
 	color: var(--focus-alt);
 }
 
-br {
-	line-height: 2rem;
-
-}
-
 /* Utility classes */
 .row {
 	display: flex;
@@ -73,6 +68,11 @@ br {
 .grid-columns {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+.new-line {
+	display: block;
+	margin-top: 0.5rem;
 }
 
 /* Buttons */
