@@ -225,11 +225,8 @@ header img {
 		flex-direction: column;
 	}
 
+	#eating-habits,
 	form .row section {
-		margin: 0.5rem 0;
-	}
-
-	#eating-habits {
 		margin: 0.5rem 0;
 	}
 
