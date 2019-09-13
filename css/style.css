@@ -1,13 +1,13 @@
 /* Color scheme */
 :root {
-	--background: #efefef;
-	--form-bg-standard: #fff;
-	--form-bg-alt: #eee;
-	--form-bg-dark: #444;
-	--text-standard: #666;
-	--text-title: #333;
-	--focus: #7bc94e;
-	--focus-alt: #4394d6;
+    --background: #EFEFEF;
+    --form-bg-standard: #FFF;
+    --form-bg-alt: #EEE;
+    --form-bg-dark: #444;
+    --text-standard: #666;
+    --text-title: #333;
+    --focus: #7BC94E;
+    --focus-alt: #4394D6;
 }
 
 /* Basic Reset */
@@ -19,11 +19,11 @@
 
 /* Standard setup */
 body {
-	background-color: var(--background);
-	/* background: linear-gradient(45deg, #759b61, #619b85); */
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.5;
+
 	color: var(--text-standard);
+	background-color: var(--background);
 }
 
 main {
@@ -43,25 +43,31 @@ img {
 
 h1 {
 	font-size: 2.5rem;
-	color: #fff;
+
 	text-align: center;
+
+	color: #fff;
 }
 
 h2 {
 	font-size: 1.25rem;
+
 	margin-bottom: 1rem;
+
 	color: var(--focus-alt);
 }
 
 /* Utility classes */
 .row {
 	display: flex;
+
 	width: 100%;
 }
 
 .col {
 	display: flex;
 	flex-direction: column;
+
 	width: 100%;
 }
 
@@ -72,18 +78,21 @@ h2 {
 
 .new-line {
 	display: block;
+
 	margin-top: 0.5rem;
 }
 
 /* Buttons */
 .btn {
-	border: none;
-	padding: 1rem 1rem;
-	width: 20rem;
-	background-color: var(--focus);
-	color: #fff;
 	font-size: 1.1rem;
+
+	width: 20rem;
+	padding: 1rem 1rem;
+
+	color: #fff;
+	border: none;
 	border-radius: 5px;
+	background-color: var(--focus);
 }
 
 .btn:hover {
@@ -92,13 +101,15 @@ h2 {
 
 /* Form */
 section {
-	background-color: var(--form-bg-standard);
 	display: flex;
 	flex-direction: column;
+
 	width: 100%;
-	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 	margin: 0.5rem 0;
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+
 	border: none;
+	background-color: var(--form-bg-standard);
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -111,7 +122,9 @@ section {
 
 .fset-sub {
 	display: block;
+
 	width: 100%;
+
 	border: none;
 }
 
@@ -120,13 +133,16 @@ input[type="email"],
 input[type="number"],
 select,
 #comments {
-	display: inline-block;
-	width: 100%;
-	padding: 0.5rem;
-	border-color: var(--form-bg-alt);
-	border-style: solid;
-	margin-bottom: 1rem;
 	font-size: 16px;
+
+	display: inline-block;
+
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+
+	border-style: solid;
+	border-color: var(--form-bg-alt);
 }
 
 select {
@@ -139,43 +155,50 @@ label {
 
 .main-label {
 	font-size: 1.1rem;
+
 	margin-bottom: 0.5rem;
+
 	color: var(--text-title);
 }
 
 legend.main-label {
 	display: block;
 	float: left;
+
 	width: 100%;
 	margin-top: 0rem;
 }
 
 /* Header */
 header {
-	/* background-color: var(--focus-alt); */
-	background: linear-gradient(45deg, #4394d6, #43c5d6);
-	padding: 2rem 1rem 1rem 1rem;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
 	margin-bottom: 0.5rem;
+	padding: 2rem 1rem 1rem 1rem;
+
 	color: #fff;
+
+/* background-color: var(--focus-alt); */
+	background: linear-gradient(45deg, #4394d6, #43c5d6);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 header div {
-	padding: 2rem 5rem;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+
+	padding: 2rem 5rem;
 }
 
 #description {
-	margin-right: 1rem;
 	font-size: 1rem;
 	font-weight: 500;
+
 	width: 100%;
+	margin-right: 1rem;
 }
 
 header img {
-	height: 100px;
 	width: auto;
+	height: 100px;
 	margin-left: 1rem;
 }
 /* P-info */
@@ -190,8 +213,8 @@ header img {
 
 /* Additional-info */
 #add-info .col {
-	justify-content: center;
 	align-items: flex-end;
+	justify-content: center;
 }
 
 /* Media queries desktop first */
